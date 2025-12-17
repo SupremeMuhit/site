@@ -6,7 +6,7 @@ This site is a collection of my favorite tools, resources, and hidden gems. Here
 
 - **[Resources](/resources)**: The main collection of 16 categories (Privacy, AI, Gaming, etc.).
 - **[Social Links](/social-links)**: Connect with me.
-- **[Tier Lists](/tier-lists)**: My rankings of tech.
+- **[Alternatives](/alternates)**: My rankings of tech.
 - **[The Vault](/vault)**: Password-protected secrets.
 
 ## How to use
