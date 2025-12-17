@@ -3,14 +3,14 @@ name: Deploy VitePress to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change if your default branch is 'master'
+      - main  # or 'master', whatever your default branch is
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout your repository
+      # 1. Checkout the repository
       - uses: actions/checkout@v3
 
       # 2. Setup Node.js
@@ -29,9 +29,8 @@ jobs:
 
       # 5. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/.vitepress/dist
-          # Optional: customize commit message
           commit_message: "📦 Deploy VitePress site"
